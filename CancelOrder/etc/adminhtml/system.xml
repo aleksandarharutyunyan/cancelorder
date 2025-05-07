@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="aiops" translate="label" sortOrder="10">
+            <label>AiOpsGroup</label>
+        </tab>
+        <section id="cancel_order" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Cancel Order</label>
+            <tab>aiops</tab>
+            <resource>Aiops_CancelOrder::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Installed Extensions</label>
+                <field id="order_status_cancel_allowed" translate="label" type="multiselect" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Order Statuses Allowed for Cancel</label>
+                    <source_model>Aiops\CancelOrder\Model\Config\Source\Order\Status</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

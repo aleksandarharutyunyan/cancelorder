@@ -1,0 +1,20 @@
+{
+    "name": "aiops/cancelorder",
+    "description": "Add cancel order functionality for payment review orders, Allow orders to be moved to processing status from admin panel",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "Commercial"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Aiops\\CancelOrder\\": ""
+        }
+    }
+}
